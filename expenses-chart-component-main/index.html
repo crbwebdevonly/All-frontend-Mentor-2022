@@ -1,44 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./scss/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="./script.js" defer></script>
+		<title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-     <h1>test2</h1>
-
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">crb</a>.
-  </div>
-</body>
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<!-- <style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style> -->
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h6>My balance</h6>
+				<h2>$921.48</h2>
+				<div class="logo"></div>
+			</header>
+			<main>
+				<h2>Spending - Last 7 days</h2>
+				<div class="bar-chart">
+					<ul id="bar-ul">
+						<li>
+							<div
+								class="bar"
+								style="
+									height: 100px;
+									background-color: var(--Soft-red);
+								"
+							>
+								<div class="amount">$100</div>
+							</div>
+							<div class="day">Mon</div>
+						</li>
+						<li>
+							<div class="bar"></div>
+							<div class="day">Mon</div>
+							<div class="amount">$50.36</div>
+						</li>
+						<li>
+							<div class="bar"></div>
+							<div class="day">Mon</div>
+							<div class="amount">$31.07</div>
+						</li>
+						<li>
+							<div class="bar"></div>
+							<div class="day">Mon</div>
+							<div class="amount">$100</div>
+						</li>
+						<li>
+							<div class="bar"></div>
+							<div class="day">Mon</div>
+							<div class="amount">$100</div>
+						</li>
+						<li>
+							<div class="bar"></div>
+							<div class="day">Mon</div>
+							<div class="amount">$100</div>
+						</li>
+						<li>
+							<div class="bar"></div>
+							<div class="day">Mon</div>
+							<div class="amount">$100</div>
+						</li>
+					</ul>
+				</div>
+				<hr />
+				<div class="bottom">
+					<div class="left">
+						<h6>Total this month</h6>
+						<h2>$478.33</h2>
+					</div>
+					<div class="right">
+						<h2>+2.4%</h2>
+						<h6>from last month</h6>
+					</div>
+				</div>
+			</main>
+		</div>
+		<footer>
+			<div class="attribution">Challenge by</div>
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">crb</a>.
+		</footer>
+	</body>
 </html>
