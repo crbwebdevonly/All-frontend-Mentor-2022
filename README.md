@@ -7,3 +7,5 @@
 [qr-code-component-main](https://crbwebdevonly.github.io/All-frontend-Mentor-2022/qr-code-component-main/)
 
 [interactive-rating-component-main](https://crbwebdevonly.github.io/All-frontend-Mentor-2022/interactive-rating-component-main/)
+
+[advice-generator-app-main](https://crbwebdevonly.github.io/All-frontend-Mentor-2022/advice-generator-app-main/)
