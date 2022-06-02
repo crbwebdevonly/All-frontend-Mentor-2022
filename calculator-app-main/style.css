@@ -87,6 +87,11 @@ html {
 body {
 	/* background-color: var(--test); */
 	background-color: var(--screen-background);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 .container {
 	padding: 40px 20px;
@@ -96,6 +101,7 @@ body {
 	/* max-width: 800px; */
 	width: max-content;
 	margin: 0 auto;
+	border-radius: 10px;
 }
 [data-theme="theme-1"] .container {
 }
