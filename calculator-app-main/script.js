@@ -141,10 +141,16 @@ const reset = () => {
 };
 
 const del = () => {
-	if (!op) {
+	if (num1 && op) {
+		if (!num2) {
+			op = "";
+			return;
+		} else num2 = num2.slice(0, -1);
+	} else if (!op) {
 		if (!num1) return;
 		num1 = num1.slice(0, -1);
-	} else num2 = num2.slice(0, -1);
+		if (!num1) num1 = "0";
+	}
 };
 numUL.map((e) => {
 	e.addEventListener("click", (e) => {
