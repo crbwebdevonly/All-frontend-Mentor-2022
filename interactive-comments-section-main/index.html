@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script src="./script.js" defer></script>
+
+		<title>Frontend Mentor | Interactive comments section</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Pull dynamic content from the data.json file -->
+		<div class="container" id="container">
+			<div
+				class="all-comments-container"
+				id="all-comments-container"
+			></div>
+
+			<!-- modal -->
+			<div class="modal-container" id="modal">
+				<div class="modal-content">
+					<h2>Delete comment</h2>
+					<p>
+						Are you sure you want to delete this comment? This
+						will remove the comment and can't be undone.
+					</p>
+					<div class="btn-wrap">
+						<div class="cancel" onclick="deletNo()">
+							No, cancel
+						</div>
+						<div class="delete" onclick="deletYes()">
+							yes, delete
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- add comment -->
+			<div class="add-comment-container">
+				<!-- <input type="text" placeholder="Add a comment" /> -->
+				<textarea
+					name=""
+					id="send-input"
+					rows="4"
+					placeholder="Add a comment"
+				></textarea>
+				<!-- <div class="send-wrap"> -->
+				<img src="./images/avatars/image-amyrobson.png" alt="" />
+				<div class="send" onclick="handleSendClick()">SEND</div>
+				<!-- <span class="send">SEND</span> -->
+				<!-- </div> -->
+			</div>
+		</div>
+
+		<div class="attribution">
+			Challenge by
+			<a
+				href="https://www.frontendmentor.io?ref=challenge"
+				target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">crb</a>.
+		</div>
+	</body>
+</html>
