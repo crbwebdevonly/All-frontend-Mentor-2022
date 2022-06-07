@@ -17,3 +17,5 @@
 [interactive-comments-section-main](https://crbwebdevonly.github.io/All-frontend-Mentor-2022/interactive-comments-section-main/)
 
 [launch-countdown-timer-main](https://crbwebdevonly.github.io/All-frontend-Mentor-2022/launch-countdown-timer-main/)
+
+[bookmark-landing-page-master](https://crbwebdevonly.github.io/All-frontend-Mentor-2022/bookmark-landing-page-master/)
