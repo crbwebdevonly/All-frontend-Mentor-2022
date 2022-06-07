@@ -192,6 +192,11 @@ nav ul {
 	nav ul .nav-li:hover {
 		color: var(--Soft-Red);
 	}
+	.login {
+		color: white;
+		background-color: var(--Soft-Red);
+		border-radius: 5px;
+	}
 	.login:hover {
 		border: 2px solid var(--Soft-Red);
 		border-radius: 5px;
